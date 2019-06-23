@@ -8,7 +8,7 @@ public class Department implements Serializable {
 
 	private Integer id;
 	private String name;
-
+	
 	public Department() {
 	}
 
@@ -50,14 +50,13 @@ public class Department implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Department other = (Department) obj;
-
 		if (id == null) {
 			if (other.id != null)
 				return false;
 		} else if (!id.equals(other.id))
 			return false;
-     		return true;
- 	}
+		return true;
+	}
 
 	@Override
 	public String toString() {
